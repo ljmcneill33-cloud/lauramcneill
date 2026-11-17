@@ -49,3 +49,20 @@ document.querySelectorAll("form.signup").forEach((form) => {
 
 const y = document.getElementById("year");
 if (y) y.textContent = new Date().getFullYear();
+
+// Copy-to-clipboard for media kit bios
+document.querySelectorAll(".copy-btn").forEach((b) => {
+  b.addEventListener("click", async () => {
+    const el = document.getElementById(b.dataset.copy);
+    const text = el.innerText.trim();
+    try {
+      await navigator.clipboard.writeText(text);
+      b.textContent = "Copied";
+    } catch {
+      const r = document.createRange(); r.selectNodeContents(el);
+      const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+      b.textContent = "Selected";
+    }
+    setTimeout(() => (b.textContent = "Copy"), 1800);
+  });
+});

@@ -8,6 +8,8 @@ Dark, editorial design: ink background, brass accents, Cormorant Garamond + Inte
 - `books.html` — all three suspense novels + Lauren Clark titles, with buy links
 - `about.html` — biography and timeline
 - `consulting.html` — services, who it's for, engagement process, credentials, speaking topics, FAQ
+- `speaking.html` — signature talks, formats, audiences, booking
+- `media.html` — media kit: copyable bios, fast facts, interview topics, speaker introduction
 - `contact.html` — readers, media/speaking, academic inquiries
 
 Shared styles in `assets/style.css`, behavior in `assets/site.js`. No build step is needed to serve the site.
@@ -25,4 +27,5 @@ Settings → Pages → Source: *Deploy from a branch* → `main` / `(root)`.
 - **Author photo:** replace the `.portrait` monogram block with an `<img>`.
 - **Contact:** add a public contact email or form for book clubs and media.
 - **Consulting:** add a booking link (e.g. Calendly) or inquiry form to the "Have a project in mind?" section; adjust services/FAQ to your actual offerings.
+- **Media kit:** add a downloadable headshot and cover images; review the bios and speaker intro.
 - **Lauren Clark blurbs** on `books.html` are short placeholders — swap in final copy.
