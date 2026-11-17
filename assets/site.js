@@ -26,7 +26,7 @@ if ("IntersectionObserver" in window) {
 
 // Newsletter: set data-endpoint on the form to a Buttondown / Mailchimp / Formspree
 // URL to go live. Until then, the form explains that sign-ups aren't open.
-document.querySelectorAll("form.signup").forEach((form) => {
+document.querySelectorAll("form.signup, form.magnet-form").forEach((form) => {
   const note = form.parentElement.querySelector(".form-note");
   form.addEventListener("submit", async (ev) => {
     ev.preventDefault();
